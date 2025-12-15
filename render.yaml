@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: chaincast-backend
+    env: node
+    root: backend
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: NODE_VERSION
+        value: 18
+      - key: PORT
+        value: 10000
