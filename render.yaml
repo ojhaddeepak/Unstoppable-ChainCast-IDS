@@ -2,7 +2,7 @@ services:
   - type: web
     name: chaincast-backend
     env: node
-    root: backend
+    rootDir: backend
     plan: free
     buildCommand: npm install
     startCommand: node server.js
